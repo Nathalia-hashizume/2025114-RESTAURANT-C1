@@ -86,7 +86,7 @@ public class FoodStorage {
                 System.out.println("Warning: Empty Storage");
                 return null;
             }
-            return items[top--];
+            return items[top];
         }
     }
 }
