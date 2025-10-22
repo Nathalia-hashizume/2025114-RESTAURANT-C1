@@ -1,5 +1,5 @@
 //Class for our storage
-public class FoodStorage {
+public class FoodStorage implements IStorage {
     private FoodItem[] items;
     private final int CAPACITY = 8; // The Capacity is 8
     private int top;
