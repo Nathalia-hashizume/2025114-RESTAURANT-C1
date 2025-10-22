@@ -73,4 +73,20 @@ public class FoodStorage {
         }
         System.out.println("-------------------------");
     }
+    //I added the remaining classes to the food types
+    public FoodItem peek() {
+        if (useOppositeSide) {
+            if (front == -1 || front > rear) {
+                System.out.println("Warning: Empty Storage");
+                return null; // Back Null if is Empty
+            } 
+            return items [front];
+        } else {
+            if (top ==-1) {
+                System.out.println("Warning: Empty Storage");
+                return null;
+            }
+            return items[top--];
+        }
+    }
 }
